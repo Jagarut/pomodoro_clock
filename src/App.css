@@ -45,7 +45,8 @@ button:active {
   font-size: 74px;
 }
 
-.timer-control {
+.red {
+  color: red;
 }
 
 .timer-control button {
@@ -61,9 +62,13 @@ button:active {
 
 @media (max-width: 475px) {
   .labels-container {
-    width: 100%;
+    width: 90%;
   }
   .timer {
+    margin-top: 70px;
     border: none;
+  }
+  .timer-control {
+    margin-top: 90px;
   }
 }

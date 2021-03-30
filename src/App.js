@@ -140,8 +140,10 @@ class App extends Component {
           </div>
         </div>
         <div className="timer">
-          <h4 id="timer-label">{title}</h4>
-          <h2 id="time-left">
+          <h4 id="timer-label" className={title === "Break" && "red"}>
+            {title}
+          </h4>
+          <h2 id="time-left" className={title === "Break" && "red"}>
             {minutes < 10 ? `0${minutes}` : minutes}:
             {seconds === 60 ? "00" : seconds < "10" ? `0${seconds}` : seconds}
             {/* <span id="minute">{minutes < 10 ? `0${minutes}` : minutes}</span>:
